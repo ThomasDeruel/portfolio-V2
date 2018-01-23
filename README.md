@@ -1,7 +1,7 @@
 # portfolio-V2 Mobile First
- Section Home :white_check_mark: Responsive :black_square_button:
+ Section Home :white_check_mark: Responsive :black_square_button: Compatibilité :moz :white_check_mark: chrome :white_check_mark:
  
- Section Menu :white_check_mark: Responsive :black_square_button:
+ Section Menu :white_check_mark: Responsive :black_square_button: Compatibilité :moz :white_check_mark: chrome :black_square_button: 
  
  Section Works :black_square_button: Respnsive :black_square_button:
  
