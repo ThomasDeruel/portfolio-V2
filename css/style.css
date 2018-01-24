@@ -200,11 +200,12 @@ html
 }
 .navContainer
 {
-  margin:5px 6px 0 6px;
+  margin:10px 10px 0 10px;
   display:flex;
   overflow:hidden;
   justify-content:space-between;
   align-items:center;
+  transition: all .2s;
 }
 
 @keyframes visible
@@ -302,7 +303,6 @@ width:10%;
   background:white;
   width:70%;
   height:3.5em;
-
   z-index:15;
   animation:transitionleft 1.6s forwards;
   animation-delay:1.95s;
@@ -418,6 +418,10 @@ width:10%;
   {
     display:block;
   }
+  .navContainer
+  {
+    margin:25px 25px 0 25px;
+  }
   .textScroll
   {
     font-size:1.5em;
@@ -432,6 +436,10 @@ width:10%;
   {
     font-size:1.3em;
   }
+  .navContainer
+  {
+    margin:30px 40px 0 40px;
+  }
 }
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 .menu
@@ -443,6 +451,7 @@ width:10%;
 {
  list-style-type:none;
 }
+
 .navigationContainer
 {
 
