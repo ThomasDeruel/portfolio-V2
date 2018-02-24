@@ -22,7 +22,7 @@
 
   <section class="home">
 
-  <!-- NAV -->
+    <!-- NAV -->
     <div class="nav">
       <div class="navContainer">
         <img class="logo" src="img/logo.png" alt="logo">
@@ -49,19 +49,49 @@
   </section>
   <!-- Menu -->
   <div class="menu">
-  <nav class="navigation">
-    <ul class="navigationContainer">
-      <li data-menu="Portfolio"class="navItems">Porftolio<span class="navItemsPortfolio">PORTFOLIO</span><span class="navItemsAnimation"></span></li>
+    <nav class="navigation">
+      <ul class="navigationContainer">
+        <a class="navItems" href="#">Porftolio<span class="navItemsPortfolio">PORTFOLIO</span><span class="navItemsAnimation"></span></a>
 
-      <li data-menu="Works"class="navItems">Works<span class="navItemsWorks">Works</span><span class="navItemsAnimation"></span></li>
+        <a class="navItems" href="#works">Works<span class="navItemsWorks">Works</span><span class="navItemsAnimation"></span></a>
 
-      <li data-menu="about"class="navItems">About<span class="navItemsAbout">About</span><span class="navItemsAnimation"></span></li>
-    </ul>
-  </nav>
+        <a class="navItems" href="#contact">About<span class="navItemsAbout">About</span><span class="navItemsAnimation"></span></a>
+      </ul>
+    </nav>
   </div>
-  <section class="works">
-
+  <!-- WORKS -->
+  <section id="works"class="works">
+    <h1 class="worksTitle">Works</h1>
+    <div class="worksContainer">
+      <div class="worksItems"><span class="worksItemsNumber">01</span> <span class="bolder worksItemsTitle">SpotnRide</span></div>
+      <div class="worksItems"><span class="worksItemsNumber">02</span> <span class="bolder worksItemsTitle">Nespresso</span></div>
+      <div class="worksItems"><span class="worksItemsNumber">03</span> <span class="bolder worksItemsTitle">Rewind</span></div>
+      <div class="worksItems"><span class="worksItemsNumber">04</span> <span class="bolder worksItemsTitle">Amazon</span></div>
+      <div class="worksItems"><span class="worksItemsNumber">??</span> <span class="bolder worksItemsTitle">Erreur 404</span></div>
+    </div>
   </section>
+  <!-- ABOUT ME -->
+  <section class="about">
+    <p class="aboutParagraph">If you want to want more</p>
+    <h1 class="aboutTitleH1">About Me</h1>
+    <h2 class="aboutTitleH2">student and web developper junior</h2>
+    <p class="aboutParagraph">Hi ! My name is Deruel Thomas. I currently live in a peaceful city
+    named Villemomble. At the moment, I'm still a beginner of web developper
+  and I have a lot things to learn. I'm always keen to hear about a <span class="bolder">traineeship</span>
+  or a <span class="bolder">apprenticeship</span>. If you are interested, send me a message.
+</p>
+  </section>
+  <!-- CONTACT -->
+  <section id="contact"class="contact">
+    <h1 class="contactTitle">Contact</h1>
+    <address class="address">
+      <span class="addressItems"><span class="bolder">Phone</span> : +33 6 25 59 41 00</span>
+      <span class="addressItems"><span class="bolder">Mail</span> : t.deruel@hotmail.fr</span>
+    </address>
+  </section>
+  <footer class="footer">
+    © 2018 deruel thomas. No stealing please.
+  </footer>
   <script src="script\animation.js"></script>
 </body>
 
