@@ -721,14 +721,13 @@ html {
   width: 60%;
   height: 2px;
   bottom: -4px;
-  background: #838182;
+  background:#838182;
 }
 
 .worksItemsTitle::after
 /*date*/
   {
   content: attr(data-date);
-  color: #838182;
   width: 38%;
   font-size: 1.8rem;
   bottom: -8px;
@@ -863,8 +862,13 @@ html {
   margin-top: 50px;
   margin-left: 25%;
   margin-right:16.66667%;
-}
 
+}
+/*PICTURE ABOUT ME */
+.aboutAndContact_Picture
+{
+  display:none;
+}
 .aboutParagraph, .aboutTitleH1 {
   color: #e4e4e4;
 }
@@ -904,6 +908,58 @@ html {
   margin-right: 10%;
   -height: 2.5rem;
 }
+@media screen and (min-width:1080px){
+  .aboutAndContact {
+  width:100%;
+  margin: 104px auto 50px auto;
+  height:auto;
+  }
+
+  .aboutAndContact_Container
+  {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    width:100%;
+    height:auto;
+    align-items:center;
+    height:auto;
+  }
+  .aboutAndContact_Picture
+  {
+    display:block;
+    width:50%;
+    position:relative;
+  }
+  .profil_one
+  {
+  width:60%;
+  margin:auto;
+  height:30vw;
+  background:#1c1c1c;
+  }
+  .aboutAndContact_content
+  {
+    width:50%;
+  }
+  .aboutAndContact_content_container
+  {
+    margin-right:33.3%;
+  }
+  .aboutParagraph:first-child,.aboutTitleH1,.aboutTitleH2
+  {
+    text-align:right;
+  }
+  .aboutParagraph:first-child::before
+  {
+    left:105%;
+  }
+}
+
+
+
+
+
 
 /* DETAILS */
 
@@ -1209,21 +1265,14 @@ html {
   margin: 8px 0;
   width: 100%;
 }
-/*PICTURE ABOUT ME */
-.aboutAndContact_Picture
-{
-  display:none;
-}
 
-@media screen and (min-width:720px)
-{
 
-}
+
 /* footer*/
 
 .footer {
-  margin-top: 8px;
-  width: 75%;
+  margin:16px 0;
+  width: 95%;
   margin-left: auto;
   font-size: 1.2rem;
   color: rgb(218, 219, 217, .1);

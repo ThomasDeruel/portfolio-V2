@@ -159,6 +159,7 @@ var padding = works[w].style.paddingLeft;
    for (var b = 0;b<bgBorder.length; b++) {
      bgBorder[b].style.width="0";
      bgNumber[w].style.color=data[w].color;
+     workslink[w].setAttribute('data-color',data[w].color);
      bgNumber[w].style.background=data[w].colorBg;
      bg.style.background=data[w].colorBg;
    }

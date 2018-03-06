@@ -17,8 +17,8 @@ var data =
     link:"https://ibb.co/hCUtAx",
     content:"blablablablablablablablablalblalblalblzlblzlblzll",
     pictures:['image1','image2','image3'],
-    color:"#ffcc80",
-    colorBg:"#ff9900",
+    color:"#ff9900",
+    colorBg:"#ffcc80",
     bgImage:0
   },
   {
@@ -40,8 +40,8 @@ var data =
     link:0,
     content:0,
     pictures:0,
-    color:"#ffe066",
-    colorBg:"#e6b800"
+    color:"#e6b800",
+    colorBg:"#ffe066"
   },
   {
     name:"Erreur 404",
@@ -54,3 +54,4 @@ var data =
     color:"#cc0000",
     colorBg:"#ff3333"
   }];
+var colorInit ="#838182 !important";
