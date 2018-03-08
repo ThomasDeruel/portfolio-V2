@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" media="all" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
   <title>DeruelThomas</title>
 </head>
 
@@ -45,25 +46,22 @@
 </h1>
       </div>
       <div class="scroll"><span class="lineScroll"></span><span class="textScroll">Scroll</span></div>
-
     </section>
     <!-- Menu -->
     <div class="menu">
       <nav class="navigation">
         <ul class="navigationContainer">
           <a class="navItems" href="#">Porftolio<span class="navItemsPortfolio">PORTFOLIO</span><span class="navItemsAnimation"></span></a>
-
           <a class="navItems" href="#works">Works<span class="navItemsWorks">Works</span><span class="navItemsAnimation"></span></a>
-
           <a class="navItems" href="#contact">About<span class="navItemsAbout">About</span><span class="navItemsAnimation"></span></a>
         </ul>
       </nav>
     </div>
     <!-- WORKS -->
-    <section id="works" class="works">
-      <h1 class="worksTitle">Works</h1>
-      <div class="worksContainer">
-        <div class="worksItems "><span class="worksItemsNumber">01</span> <span class="bolder worksItemsTitle"></span></div>
+    <section id="works" class="works" data-aos-offset="285">
+      <h1 class="worksTitle" data-aos="fade-right" >Works</h1>
+      <div class="worksContainer "data-aos="fade-right">
+        <div class="worksItems" ><span class="worksItemsNumber">01</span> <span class="bolder worksItemsTitle"></span></div>
         <div class="worksItems one"><span class="worksItemsNumber">02</span> <span class="bolder worksItemsTitle"></span></div>
         <div class="worksItems two"><span class="worksItemsNumber">03</span> <span class="bolder worksItemsTitle"></span></div>
         <div class="worksItems three"><span class="worksItemsNumber">04</span> <span class="bolder worksItemsTitle"></span></div>
@@ -129,14 +127,11 @@
     <!-- ABOUT ME -->
     <section class="aboutAndContact">
       <div class="aboutAndContact_Container">
-      <div class="aboutAndContact_Picture">
-      <div class="profil_one">
-
-      </div>
-
+      <div class="aboutAndContact_Picture" data-aos="zoom-in" data-aos-offset="185">
+      <div class="profil_one"></div>
       </div>
       <div class="aboutAndContact_content">
-        <div class="aboutAndContact_content_container">
+        <div class="aboutAndContact_content_container" data-aos="fade-left" data-aos-offset="230">
         <p class="aboutParagraph">If you want to want more</p>
         <h1 class="aboutTitleH1">About Me</h1>
         <h2 class="aboutTitleH2">student and web developper junior</h2>
@@ -159,7 +154,9 @@
     </footer>
 
   </section>
+  <script src="script\aos.js"></script>
   <script src="script\data.js"></script>
+  <script src="script\animation-init.js"></script>
   <script src="script\animation.js"></script>
 </body>
 

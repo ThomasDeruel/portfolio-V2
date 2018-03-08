@@ -16,7 +16,20 @@ var dotsAnimation = function(){
 }
 menu.addEventListener('click',dotsAnimation);
 sectionMenu.addEventListener('click',dotsAnimation);
+// APPEAR MENU after scroll
+var scroll = document.querySelector('.scroll');
+var sectionWork = document.querySelector('.works');
+var sectionAbout = document.querySelector('.aboutAndContact');
 
+var displayBlock = function(section){
+  section.style.display="block";
+}
+
+scroll.addEventListener('animationstart',function(){
+  displayBlock(sectionWork);
+  displayBlock(sectionAbout);
+  AOS.init();
+})
 // MENU //
 var menulist=document.querySelectorAll('.navItems');
 var navContainer = document.querySelector('.navigationContainer')

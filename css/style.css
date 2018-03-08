@@ -428,13 +428,20 @@ html {
   color: #e4e4e4;
   display: flex;
   justify-content: center;
+  opacity:0;
   align-items: center;
   width: auto;
   font-family: Microsoft PhagsPa;
   position: absolute;
-  bottom: 5vh;
+  bottom: -5vh;
   left: 50%;
   transform: translateX(-50%) rotate(-90deg);
+  animation: scrollTop ease 1s forwards;
+  animation-delay: 3.7s;
+}
+@keyframes scrollTop
+{
+  100%{opacity:1;bottom: 5vh; }
 }
 
 .lineScroll {
@@ -627,7 +634,7 @@ html {
   position: relative;
   height: auto;
   padding-left: 25%;
-
+  display:none;
   transition: all .2s;
 }
 
@@ -840,7 +847,6 @@ html {
   }
   .worksItems {
     margin-top: 0;
-
   }
   .worksItems{
     font-size: 32px;
@@ -859,11 +865,13 @@ html {
 
 .aboutAndContact {
   font-family: Microsoft PhagsPa;
+  display:none;
   margin-top: 50px;
+  overflow:hidden;
   margin-left: 25%;
   margin-right:16.66667%;
-
 }
+
 /*PICTURE ABOUT ME */
 .aboutAndContact_Picture
 {
@@ -908,7 +916,7 @@ html {
   margin-right: 10%;
   -height: 2.5rem;
 }
-@media screen and (min-width:1080px){
+@media screen and (min-width:1024px){
   .aboutAndContact {
   width:100%;
   margin: 104px auto 50px auto;
@@ -929,14 +937,17 @@ html {
   {
     display:block;
     width:50%;
-    position:relative;
+
   }
   .profil_one
   {
+    position:relative;
   width:60%;
   margin:auto;
   height:30vw;
-  background:#1c1c1c;
+  z-index:2;
+  border:2px solid white;
+
   }
   .aboutAndContact_content
   {
@@ -946,7 +957,7 @@ html {
   {
     margin-right:33.3%;
   }
-  .aboutParagraph:first-child,.aboutTitleH1,.aboutTitleH2
+  .aboutParagraph:first-child
   {
     text-align:right;
   }
@@ -1271,6 +1282,7 @@ html {
 /* footer*/
 
 .footer {
+  display:none;
   margin:16px 0;
   width: 95%;
   margin-left: auto;
