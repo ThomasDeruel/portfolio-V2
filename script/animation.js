@@ -16,20 +16,7 @@ var dotsAnimation = function(){
 }
 menu.addEventListener('click',dotsAnimation);
 sectionMenu.addEventListener('click',dotsAnimation);
-// APPEAR MENU after scroll
-var scroll = document.querySelector('.scroll');
-var sectionWork = document.querySelector('.works');
-var sectionAbout = document.querySelector('.aboutAndContact');
 
-var displayBlock = function(section){
-  section.style.display="block";
-}
-
-scroll.addEventListener('animationstart',function(){
-  displayBlock(sectionWork);
-  displayBlock(sectionAbout);
-  AOS.init();
-})
 // MENU //
 var menulist=document.querySelectorAll('.navItems');
 var navContainer = document.querySelector('.navigationContainer')
@@ -135,6 +122,7 @@ var projectContainer = document.querySelector('.project_container')
 var back = document.querySelector('.project_back');
 var contact = document.querySelector('.contact');
 var about = document.querySelector('.about');
+var index;
 
 //Gérer data
 for (var i = 0; i < workslink .length; i++) {
@@ -143,11 +131,55 @@ for (var i = 0; i < workslink .length; i++) {
 };
 
 
-/* transition worksItems and detail */
+/* transition worksItems and detail + data */
+var dataTitle = document.querySelector('.data_title');
+var dataBg = document.querySelector('.project_header');
+var dataDate = document.querySelector('.data_date');
+var dataContent = document.querySelector('.project_subject_content');
+var dataTools = document.querySelector('.data_tools');
+var dataLink = document.querySelector('.data_link');
+var dataColors = document.querySelectorAll('.data_color');
+var previous = document.querySelector('.project_previous');
+var next = document.querySelector('.project_next');
+var btnContainer = document.querySelector('.project_button');
+var projectNumb = document.querySelector('.project_number');
+var myData = function(index)
+{
+  if(index === 0)
+  {
+    previous.style.display="none";
+    btnContainer.style.justifyContent="flex-end";
+  }
+  else if(index === (works.length-1))
+  {
+    next.style.display="none";
+    btnContainer.style.justifyContent="flex-start";
+  }
+  else{
+    previous.style.display="flex";
+    next.style.display="flex";
+    btnContainer.style.justifyContent="space-between";
+  }
+  dataBg.style.background= data[index].bgOne;
+  dataBg.style.background= data[index].bgTwo;
+  dataTitle.textContent = data[index].name;
+  dataDate.textContent = data[index].date;
+  dataTools.textContent = data[index].tools;
+  dataContent.textContent =data[index].content;
+  dataLink.textContent = data[index].link;
+  for (let j = 0; j < dataColors.length; j++) {
+    dataColors[j].style.color=data[index].color;
+  };
+  projectNumb.textContent = "0"+(index+1)+"/"+"0"+(works.length);
+};
 for (let w = 0; w < works.length; w++) {
  works[w].addEventListener('click',function(){
    projectUi.style.display="block";
    projectUi.style.animation="opacity ease 2s forwards";
+   myData(w);
+   //ON RECUPERE L'INDEX;
+   index = w;
+   console.log(index);
  });
  }
 
@@ -156,12 +188,6 @@ for (let w = 0; w < works.length; w++) {
    setTimeout(function(){ projectUi.style.display="none"; }, 2000);
  });
 
-/*back.addEventListener('click',function(){
-  projectUi.style.left='125%';
-  contact.style.display="block";
-  about.style.display="block";
-});*/
-// animation work hover
 var bgBorder = document.querySelectorAll('.bg-border');
 var bg = document.querySelector('.bg');
 var bgNumber = document.querySelectorAll('.worksItemsNumber');
@@ -208,3 +234,12 @@ workslink[w].addEventListener('mouseout',function(){
   }
 });
 }
+// CARROUSEL
+next.addEventListener('click',function(){
+  index++;
+  myData(index);
+})
+previous.addEventListener('click',function(){
+  index--;
+  myData(index);
+})

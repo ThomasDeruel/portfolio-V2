@@ -640,7 +640,7 @@ html {
 
 .worksContainer {
   position: relative;
-  margin-left: 2rem;
+  margin-left: 11%;
   height: auto;
 }
 
@@ -778,9 +778,8 @@ html {
     padding-left: 0;
   }
   .worksContainer {
-    margin-left:0;
-
-}
+    margin-left:5%;
+  }
 .worksItemsNumber::before/*square*/
   {
   content: '';
@@ -887,7 +886,9 @@ html {
 
 .aboutParagraph {
   font-size: 2rem;
+  line-height:3rem;
 }
+
 
 .aboutParagraph:first-child::before {
   content: "";
@@ -907,7 +908,7 @@ html {
 
 .aboutTitleH2 {
   color: #818181;
-  font-size: 2rem;
+  font-size: 1.98rem;
   margin: 2.5rem 0;
   font-weight: bold;
 }
@@ -919,8 +920,17 @@ html {
 @media screen and (min-width:1024px){
   .aboutAndContact {
   width:100%;
-  margin: 104px auto 50px auto;
+  margin: 50px auto 0 auto;
   height:auto;
+  }
+  .aboutParagraph {
+    font-size: 1.3rem;
+    line-height:1.8rem;
+  }
+  .aboutTitleH2
+  {
+    font-size:1.5rem;
+    margin:1.1rem 0;
   }
 
   .aboutAndContact_Container
@@ -937,17 +947,15 @@ html {
   {
     display:block;
     width:50%;
-
   }
   .profil_one
   {
-    position:relative;
+  position:relative;
   width:60%;
   margin:auto;
   height:30vw;
   z-index:2;
   border:2px solid white;
-
   }
   .aboutAndContact_content
   {
@@ -965,8 +973,32 @@ html {
   {
     left:105%;
   }
+  .addressItems
+  {
+    font-size:1.4rem;
+  }
 }
-
+@media screen and (min-width:1280px)
+{
+  .aboutParagraph {
+    font-size: 1.3rem;
+    line-height:1.8rem;
+  }
+  .aboutParagraph:first-child
+  {
+    font-weight:bolder;
+  }
+  .aboutTitleH2
+  {
+    font-size:1.5rem;
+    margin:1.1rem 0;
+  }
+  .addressItems
+  {
+    font-size:1.5rem;
+    margin:1rem 0;
+  }
+}
 
 
 
@@ -1008,7 +1040,7 @@ html {
   margin: 0 auto;
   height: 500px;
   max-width: 1080px;
-  background: ar-gradient( rgba(133, 18, 165, .8), rgba(133, 18, 165, .8)), url(https://images6.alphacoders.com/423/423562.png) center no-repeat;
+  /*background: ar-gradient( rgba(133, 18, 165, .8), rgba(133, 18, 165, .8)), url(https://images6.alphacoders.com/423/423562.png) center no-repeat;*/
   background-size: cover;
 }
 
@@ -1273,7 +1305,7 @@ html {
 }
 
 .addressItems {
-  margin: 8px 0;
+  margin: 0.5rem 0;
   width: 100%;
 }
 
