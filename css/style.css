@@ -1286,8 +1286,7 @@ content:'- ';
 
 .project_header_info_data_items {
   margin: 8px;
-  font-size: 1.9rem;
-  color: rgb(255, 89, 255);
+  font-size: 2rem;
   font-weight: bolder;
 }
 
@@ -1604,7 +1603,7 @@ a.animated-button:link:after, a.animated-button:visited:after {
     transition: all 0.75s ease 0s;
 }
 a.animated-button:link:hover, a.animated-button:visited:hover {
-    color: #FFF;
+    color: #121212;
     text-shadow: none;
 }
 a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
@@ -1614,7 +1613,7 @@ a.animated-button:link, a.animated-button:visited {
     position: relative;
     display: block;
     padding: 14px 15px;
-    color: #fff;
+    color: #121212;
     font-size:13px;
     border-radius: 0;
     font-weight: bold;
@@ -1630,7 +1629,7 @@ a.animated-button:link, a.animated-button:visited {
     transition: all 1s ease;
 }
 a.animated-button.thar-three {
-    color: #121212;
+    color: #e4e4e4;
     cursor: pointer;
     display: block;
     position: relative;
@@ -1639,7 +1638,7 @@ a.animated-button.thar-three {
 0s;
 }
 a.animated-button.thar-three:hover {
-    color: #000;
+    color: #121212;
     background-color: transparent;
     text-shadow: nthree;
 }
@@ -1657,7 +1656,7 @@ a.animated-button.thar-three:before {
     width: 0px;
     z-index: -1;
     content: '';
-    color: #000;
+    color: #e4e4e4;
     background: #fff;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }

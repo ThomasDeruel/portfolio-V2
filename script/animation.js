@@ -27,8 +27,6 @@ for(let i =0;i<menulist.length;i++)
     menulist[i].addEventListener("animationend", function(){
     this.addEventListener('mouseenter',function(){
 
-      /*this.style.color='rgb(2,2,2,0.10)';
-      this.style.color='rgba(2,2,2,0.10)';*/
       linklist[i].style.color="rgba(2,2,2,0.10)";
       linklist[i].style.color="rgb(2,2,2,0.10)";
       listMenu[i].style.color="#232323";

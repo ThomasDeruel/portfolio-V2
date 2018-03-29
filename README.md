@@ -5,11 +5,11 @@
 
  Section Menu :white_check_mark: Responsive :white_check_mark: Compatibilité :moz :white_check_mark: chrome :white_check_mark:
 
- Section Works :white_check_mark: Responsive :black_square_button:
+ Section Works :white_check_mark: Responsive :white_check_mark:
 
  Section Detail :white_check_mark: Responsive :white_check_mark: [Link](https://codepen.io/ThomasDeruel/pen/YevLMO)
 
- Section About :white_check_mark: Responsive :black_square_button:
+ Section About :white_check_mark: Responsive :white_check_mark:
 
 ---------------------------------
 ## Partie JS
@@ -18,13 +18,13 @@
 
  Section Menu :white_check_mark: 
 
- Section Works :black_square_button:
+ Section Works :white_check_mark:
 
  Section Detail :white_check_mark: 
 
- Section About :black_square_button:
+ Section About :white_check_mark:
 
-Creation + Gestion Data :black_square_button:
+Creation + Gestion Data :white_check_mark:
 
-Animation scroll :black_square_button:
+Animation scroll :white_check_mark:
 
