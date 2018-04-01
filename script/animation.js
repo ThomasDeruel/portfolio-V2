@@ -91,6 +91,7 @@ var projectContainer = document.querySelector('.project_container')
 var back = document.querySelector('.project_back');
 var contact = document.querySelector('.contact');
 var about = document.querySelector('.about');
+
 var index;
 //Gérer data_date
 for (var i = 0; i < workslink .length; i++) {
@@ -115,7 +116,21 @@ var btnContainer = document.querySelector('.project_button');
 var projectNumb = document.querySelector('.project_number');
 var titlePrev = document.querySelector('.project_previous_name_title');
 var titleNext = document.querySelector('.project_next_name_title');
-var imgs = document.querySelectorAll('.projectimg');
+// A FAIRE
+var new_img;
+var arrayImg=[];
+// New imgs
+var imgContainer= document.querySelectorAll('.project_pictures_items');
+
+var createImg = function(){
+ for (var i = 0; i < imgContainer.length; i++) {
+    new_img = document.createElement("img");
+    new_img.classList.add('projectimg');
+    arrayImg.push(new_img);
+    imgContainer[i].appendChild(new_img);
+ }
+};
+
 var myData = function(index)
 {
   if(index === 0)
@@ -144,9 +159,11 @@ var myData = function(index)
   for (var j = 0; j < dataColors.length; j++) {
     dataColors[j].style.color=data[index].color;
   };
-  for (var k = 0; k < imgs.length; k++) {
-    imgs[k].src = data[index].pictures[k];
+
+  for (var k = 0; k < 3; k++) {
+    arrayImg[k].setAttribute('src',data[index].pictures[k]);
   }
+
   projectNumb.textContent = "0"+(index+1)+"/"+"0"+(works.length);
 
   if(index > 0){
@@ -242,6 +259,8 @@ function enableScroll() {
 };
 for (let w = 0; w < works.length; w++) {
  workslink[w].addEventListener('click',function(){
+   createImg();
+   console.log(arrayImg);
    disableScroll();
    myData(w);
    //ON RECUPERE L'INDEX;
