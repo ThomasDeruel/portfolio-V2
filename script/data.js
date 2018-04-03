@@ -1,7 +1,7 @@
 var data =
   [{
     name:"Spotnride",
-    content: "<p>During this intensive week, we had to realise a <b>landing page</b>.</p></br> <p>Our landing did have as theme the urban fashion.</br> So, me and my team decided to put forward a an application which helps people to find spots skatepark<p></br><p>This application is called <b>SpotnRide</b>.</p>",
+    content: "<p>During this intensive week, we had to realise a <b>landing page</b>.</p></br> <p>We had as theme the urban fashion.</br> So, me and my team decided to put forward an application which helps people to find skateparks<p></br><p>This application is called <b>SpotnRide</b>.</p>",
     date:"20/11/17",
     tools:"html5/css3",
     link:'https://github.com/BillalOI/SpotnRide',
@@ -13,7 +13,7 @@ var data =
   },
   {
     name:"Nespresso",
-    content:"<p>It was my first experience as much as <b>Web designer</b>.My mission was to redesign the Nespresso homepage using <b>Photoshop</b>.</p></br><p>The challenge I had here was to redo the design while keeping a coherence with the image of the brand, as was really the first time I did that, I really learned a lot.<p>",
+    content:"<p>It was my first experience as much as <b>Web designer</b>.My mission was to redesign the Nespresso homepage using <b>Photoshop</b>.</p></br><p>I had to redo the design while keeping a coherence with the image of the brand, as was really the first time I did that, I really learned a lot.<p>",
     date:"27/11/17",
     tools:"Photoshop",
     link:"https://ibb.co/hCUtAx",
